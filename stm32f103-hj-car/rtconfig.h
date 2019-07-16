@@ -39,7 +39,7 @@
 #define RT_USING_CONSOLE
 #define RT_CONSOLEBUF_SIZE 128
 #define RT_CONSOLE_DEVICE_NAME "uart1"
-#define RT_VER_NUM 0x40000
+#define RT_VER_NUM 0x30103
 #define ARCH_ARM
 #define ARCH_ARM_CORTEX_M
 #define ARCH_ARM_CORTEX_M3
@@ -79,6 +79,7 @@
 #define RT_PIPE_BUFSZ 512
 #define RT_USING_SERIAL
 #define RT_SERIAL_USING_DMA
+#define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_PIN
 
 /* Using WiFi */
@@ -95,6 +96,9 @@
 /* Socket abstraction layer */
 
 
+/* Network interface device */
+
+
 /* light weight TCP/IP stack */
 
 
@@ -108,9 +112,6 @@
 
 
 /* Utilities */
-
-
-/* ARM CMSIS */
 
 
 /* RT-Thread online packages */
@@ -157,7 +158,7 @@
 
 /* Hardware Drivers Config */
 
-#define SOC_STM32F103RB
+#define SOC_STM32F103ZE
 
 /* Onboard Peripheral Drivers */
 

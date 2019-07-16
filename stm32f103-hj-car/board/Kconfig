@@ -1,6 +1,6 @@
 menu "Hardware Drivers Config"
 
-config SOC_STM32F103RB
+config SOC_STM32F103ZE
     bool
     select SOC_SERIES_STM32F1
     default y
