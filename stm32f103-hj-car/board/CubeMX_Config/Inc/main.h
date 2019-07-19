@@ -50,6 +50,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -58,6 +60,24 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define IRIN_PIN_Pin GPIO_PIN_10
+#define IRIN_PIN_GPIO_Port GPIOD
+#define Servo_PIN_Pin GPIO_PIN_12
+#define Servo_PIN_GPIO_Port GPIOD
+#define FRONT_RIGHT_F_PIN_Pin GPIO_PIN_11
+#define FRONT_RIGHT_F_PIN_GPIO_Port GPIOC
+#define FRONT_RIGHT_B_PIN_Pin GPIO_PIN_0
+#define FRONT_RIGHT_B_PIN_GPIO_Port GPIOD
+#define BEHIND_RIGHT_F_PIN_Pin GPIO_PIN_4
+#define BEHIND_RIGHT_F_PIN_GPIO_Port GPIOD
+#define BEHIND_LEFT_F_PIN_Pin GPIO_PIN_6
+#define BEHIND_LEFT_F_PIN_GPIO_Port GPIOD
+#define BEHIND_LEFT_B_PIN_Pin GPIO_PIN_9
+#define BEHIND_LEFT_B_PIN_GPIO_Port GPIOG
+#define FRONT_LEFT_B_PIN_Pin GPIO_PIN_11
+#define FRONT_LEFT_B_PIN_GPIO_Port GPIOG
+#define FRONT_LEFT_F_PIN_Pin GPIO_PIN_13
+#define FRONT_LEFT_F_PIN_GPIO_Port GPIOG
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
